@@ -19,19 +19,19 @@
     <div class="row">
       <div class='col-md-12'>
         <h2>Latest Mars News</h2>
-        <h3>{{ listings.news_list[0] }}</h3>
-        <p>{{ listings.news_list[0] }}</p>
+        <h3>{{ listings.news_list[0]["News Title"] }}</h3>
+        <p>{{ listings.news_list[0]["News Description"] }}</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-8">
         <h2>Featured Mars Image</h2>
-        <img src= {{ listings.featured_image_url }} />
+        <img src= {{ listings.featured_image_url }} width="700" height="600" />
       </div>
       <div class="col-md-4">
         <h2>Input Table Here</h2>
-        {{ listings.html_table }}
+        {{ listings.html_table | safe }}
       </div>
     </div>
   </div>
@@ -45,16 +45,16 @@
       <div class='col-md-6'>
         <ul class="thumbnails">
           <div class="thumbnail">
-            <img src= {{ listings.featured_image_url }} width="500" height="600"/>
-            <h3 style='text-align:center'>Title 1</h3>
+            <img src= {{ listings.hemisphere_image_urls[0]["img_url"] }} width="500" height="600"/>
+            <h3 style='text-align:center'>{{ listings.hemisphere_image_urls[0]["title"] }}</h3>
           </div>
         </ul>
       </div>
       <div class='col-md-6'>
         <ul class="thumbnails">
           <div class="thumbnail">
-            <img src= {{ listings.featured_image_url }} width="500" height="600"/>
-            <h3 style='text-align:center'>Title 1</h3>
+            <img src= {{ listings.hemisphere_image_urls[1]["img_url"] }} width="500" height="600"/>
+            <h3 style='text-align:center'>{{ listings.hemisphere_image_urls[1]["title"] }}</h3>
           </div>
         </ul>
       </div>
@@ -63,16 +63,16 @@
       <div class='col-md-6'>
         <ul class="thumbnails">
           <div class="thumbnail">
-            <img src= {{ listings.featured_image_url }} width="500" height="600"/>
-            <h3 style='text-align:center'>Title 1</h3>
+            <img src= {{ listings.hemisphere_image_urls[2]["img_url"] }} width="500" height="600"/>
+            <h3 style='text-align:center'>{{ listings.hemisphere_image_urls[2]["title"] }}</h3>
           </div>
         </ul>
       </div>
       <div class='col-md-6'>
         <ul class="thumbnails">
           <div class="thumbnail">
-            <img src= {{ listings.featured_image_url }} width="500" height="600"/>
-            <h3 style='text-align:center'>Title 1</h3>
+            <img src= {{ listings.hemisphere_image_urls[3]["img_url"] }} width="500" height="600"/>
+            <h3 style='text-align:center'>{{ listings.hemisphere_image_urls[3]["title"] }}</h3>
           </div>
         </ul>
       </div>

@@ -116,7 +116,7 @@ def scrape():
         'news_list' : news_list,
         'featured_image_url': featured_image_url,
         'html_table': html_table,
-        'hemisphere_info': hemisphere_image_urls
+        'hemisphere_image_urls': hemisphere_image_urls
     }
 
     browser.quit()
