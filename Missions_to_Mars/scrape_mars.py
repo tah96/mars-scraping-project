@@ -113,13 +113,15 @@ def scrape():
     #hemisphere_image_urls
 
     scraped_data = {
-        'News Clippings' : news_list,
-        'Featured Image URL': featured_image_url,
-        'HTML Table': html_table,
-        'Hemisphere Info': hemisphere_image_urls
+        'news_list' : news_list,
+        'featured_image_url': featured_image_url,
+        'html_table': html_table,
+        'hemisphere_info': hemisphere_image_urls
     }
+
+    browser.quit()
+
     return scraped_data
     
-#scrape()
 
 

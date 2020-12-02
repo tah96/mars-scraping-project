@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission To Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Mission To Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+
+    <div class="row">
+      <div class='col-md-12'>
+        <h2>Latest Mars News</h2>
+        <h3>{{ listings.news_list[0] }}</h3>
+        <p>{{ listings.news_list[0] }}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Featured Mars Image</h2>
+        <img src= {{ listings.featured_image_url }} />
+      </div>
+      <div class="col-md-4">
+        <h2>Input Table Here</h2>
+        {{ listings.html_table }}
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class='col-md-12'>
+        <h2 style="text-align:center">Mars Hemispheres</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class='col-md-6'>
+        <ul class="thumbnails">
+          <div class="thumbnail">
+            <img src= {{ listings.featured_image_url }} width="500" height="600"/>
+            <h3 style='text-align:center'>Title 1</h3>
+          </div>
+        </ul>
+      </div>
+      <div class='col-md-6'>
+        <ul class="thumbnails">
+          <div class="thumbnail">
+            <img src= {{ listings.featured_image_url }} width="500" height="600"/>
+            <h3 style='text-align:center'>Title 1</h3>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class='col-md-6'>
+        <ul class="thumbnails">
+          <div class="thumbnail">
+            <img src= {{ listings.featured_image_url }} width="500" height="600"/>
+            <h3 style='text-align:center'>Title 1</h3>
+          </div>
+        </ul>
+      </div>
+      <div class='col-md-6'>
+        <ul class="thumbnails">
+          <div class="thumbnail">
+            <img src= {{ listings.featured_image_url }} width="500" height="600"/>
+            <h3 style='text-align:center'>Title 1</h3>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
