@@ -24,6 +24,7 @@ def scrape():
     #Use soup to parse through HTML to find news snippets
 
     results = soup.find_all('div', class_="list_text")
+
     news_list = []
 
     #For loop to grab title and summary paragraph from each snippet
@@ -51,11 +52,11 @@ def scrape():
     html_jpl = browser.html
     soup_jpl = bs(html_jpl, 'html.parser')
 
-    featured_image_filter = soup_jpl.find('div', class_="default floating_text_area ms-layer")
+    jpl_image_filter = soup_jpl.find('div', class_="lg:p-0 w-72 relative z-20 p-2 pl-0 -ml-3 text-base")
 
-    featured_image_endpoint = featured_image_filter.footer.a['data-fancybox-href']
+    jpl_image_endpoint = jpl_image_filter.img["src"]
 
-    featured_image_url = url_jpl_base + featured_image_endpoint
+    jpl_image_url = url_jpl_base + jpl_image_endpoint
 
     ## Mars Facts ##
 
@@ -116,7 +117,7 @@ def scrape():
 
     scraped_data = {
         'news_list' : news_list,
-        'featured_image_url': featured_image_url,
+        'jpl_image_url': jpl_image_url,
         'html_table': html_table,
         'hemisphere_image_urls': hemisphere_image_urls
     }
