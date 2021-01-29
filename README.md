@@ -16,17 +16,19 @@ You must also have Google Chrome as a browser.
 
 Note: Jupyter Notebook was used to test each step of web-scraping activity. The Mission_To_Mars.ipynb has comments for each step taken
 
-<u><b>Step 1: Personal Configuration</b></u>
+<b>Step 1: Personal Configuration</b>
 <li> Make sure all languages/packages listed above are installed </li>
 <li> Configure executable path for ChromeDriver for your device in `scrape.py` </li>
 <li> Configure MongoDB personal URI in `app.py`</li>
+<br>
 
-<u><b>Step 2: Run The Base Code</b></u>
+<b>Step 2: Run The Base Code</b>
 <li> Open up command line. Navigate to Missions_To_Mars folder </li>
 <li> Run `python app.py` </li>
 <li> Open up local host link listed to view base data </li>
+<br>
 
-<u><b>Step 3: Scraping</b></u>
+<b>Step 3: Scraping</b>
 <li> Click the "Scrape" button at the top of the page </li>
 <li> Once the scraping is done you will see the final results displayed on the page </li>
 
