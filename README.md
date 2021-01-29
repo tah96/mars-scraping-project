@@ -35,3 +35,4 @@ Note: Jupyter Notebook was used to test each step of web-scraping activity. The 
 ## Contact Info
 
 Email: tylerandrewhunt96@gmail.com
+LinkedIn: https://www.linkedin.com/in/tylerhunt96/
